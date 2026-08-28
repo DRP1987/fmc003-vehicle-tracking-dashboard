@@ -32,14 +32,16 @@ A single-file web dashboard for a **Teltonika FMC003** GPS tracker connected thr
 
 1. In [Flespi](https://flespi.io): create a **token** (Tokens → `+`). For security, use an ACL token limited to `GET` on your device.
 2. Note your **device ID** (visible in the device URL/panel).
-3. Open `index.html` in any modern browser (double-click works — no server needed).
+3. Open `index.html` in any modern browser — double-click the file, or on Windows double-click **`open-dashboard.bat`**.
 4. Click **⚙️ Settings**, paste the token and device ID, save.
 
 Configuration is stored in your browser's `localStorage` only.
 
 ## Deploy (optional)
 
-Host it anywhere static files are served. With GitHub Pages: **Settings → Pages → Deploy from a branch → main / (root)**, then open `https://<user>.github.io/fmc003-vehicle-tracking-dashboard/`.
+**GitHub Pages (live link):** [https://DRP1987.github.io/fmc003-vehicle-tracking-dashboard/](https://DRP1987.github.io/fmc003-vehicle-tracking-dashboard/)
+
+To activate it: **Settings → Pages → Deploy from a branch → main / (root)**.
 
 > ⚠️ The page calls the Flespi API directly from the browser, so anyone with access to the page can read the token from localStorage. Use a restricted ACL token, or put the dashboard behind authentication.
 
