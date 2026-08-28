@@ -437,7 +437,7 @@ function saveAlertLog() {
 //  API HELPERS
 // ────────────────────────────────────────────────────────────
 function apiHeaders() {
-  return { Authorization: cfg.token };
+  return { Authorization: `FlespiToken ${cfg.token}` };
 }
 
 async function apiFetch(url) {
